@@ -1,0 +1,14 @@
+📌 INPUT
+a = b + c * d
+
+📌 OUTPUT
+t1 = c * d
+t2 = b + t1
+a = t2
+
+
+commands
+bison -dy ic.y
+flex ic.l
+gcc y.tab.c lex.yy.c -o ic.exe
+ic.exe

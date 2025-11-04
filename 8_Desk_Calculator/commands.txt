@@ -1,0 +1,8 @@
+input:
+10+20
+=30
+
+bison -dy calci.y
+flex calci.l
+gcc y.tab.c lex.yy.c -o calci.exe
+calci.exe

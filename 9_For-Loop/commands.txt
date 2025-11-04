@@ -1,0 +1,10 @@
+input
+for(i=0;i<10;i++)
+
+OUTPUT
+VALID
+
+bison -dy forloop.y
+flex forloop.l
+gcc y.tab.c lex.yy.c -o forloop.exe
+forloop.exe
