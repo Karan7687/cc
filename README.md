@@ -1,3 +1,7 @@
+flex test.l
+gcc lex.yy.c
+a <input.txt
+
 # Lex/Flex Programs — Run Guide (Windows CMD)
 
 This repository contains **five individual Lex/Flex programs**.  
